@@ -8,17 +8,17 @@
 // winning condition: to win - score === 21 (or closest to 21)
 //losing condition; score over 21
 
-let playerScore = 0;
+var playerScore = 0;
 let dealerScore = 0;
 
-function firstPickPlayer() {
+function randomCard() {
   min = Math.ceil(4);
   max = Math.floor(21);
   return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
   return;
 }
 
-playerScore = firstPickPlayer() + playerScore;
+playerScore = randomCard() + playerScore;
 console.log(playerScore);
 
 function firstPickDealer() {
@@ -34,14 +34,16 @@ console.log(dealerScore);
 alert("You got " + playerScore);
 let userChoice = confirm("Cancel = stick, OK = twist");
 
-if(userChoice = confirm) function secondPickPlayer() {
+if ((userChoice = confirm)) {
+  function secondScore() {
     min = Math.ceil(2);
     max = Math.floor(11);
     return Math.floor(Math.random() * (max - min + 1) + min);
     return;
+  }
 }
-alert("you got " + secondPickPlayer());
 
-playerScore = secondPickPlayer() + playerScore;
+alert("new card = " + secondScore());
 
-alert("You now have " + playerScore);
+playerScore = secondScore() + playerScore;
+alert("you got " + playerScore);
