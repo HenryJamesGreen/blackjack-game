@@ -15,12 +15,20 @@ const randomNumber = [
   4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
 ];
 
-
-function firstPickPlayer(min, max) {
-    min = Math.ceil(4);
-    max = Math.floor(21);
-    return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-  }
-  
+function firstPickPlayer() {
+  min = Math.ceil(4);
+  max = Math.floor(21);
+  return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+  return;
+}
 
 console.log(firstPickPlayer());
+
+function firstPickDealer() {
+  min = Math.ceil(2);
+  max = Math.floor(11);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+  return;
+}
+
+console.log(firstPickDealer());
