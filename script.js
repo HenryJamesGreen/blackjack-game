@@ -8,7 +8,7 @@
 // winning condition: to win - score === 21 (or closest to 21)
 //losing condition; score over 21
 
-var playerScore = 0;
+let playerScore = 0;
 let dealerScore = 0;
 
 function randomCard() {
@@ -21,7 +21,10 @@ function randomCard() {
 playerScore = randomCard() + playerScore;
 console.log(playerScore);
 
-function firstPickDealer() {
+dealerScore = randomCard() + dealerScore;
+console.log(dealerScore);
+
+/* function firstPickDealer() {
   min = Math.ceil(2);
   max = Math.floor(11);
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -46,4 +49,4 @@ if ((userChoice = confirm)) {
 alert("new card = " + secondScore());
 
 playerScore = secondScore() + playerScore;
-alert("you got " + playerScore);
+alert("you got " + playerScore); */
