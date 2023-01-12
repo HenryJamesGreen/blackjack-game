@@ -30,3 +30,18 @@ function firstPickDealer() {
 
 dealerScore = firstPickDealer() + dealerScore;
 console.log(dealerScore);
+
+alert("You got " + playerScore);
+let userChoice = confirm("Cancel = stick, OK = twist");
+
+if(userChoice = confirm) function secondPickPlayer() {
+    min = Math.ceil(2);
+    max = Math.floor(11);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    return;
+}
+alert("you got " + secondPickPlayer());
+
+playerScore = secondPickPlayer() + playerScore;
+
+alert("You now have " + playerScore);
